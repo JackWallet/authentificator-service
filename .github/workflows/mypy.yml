@@ -19,4 +19,4 @@ jobs:
       with:
         python-version: "3.13"
     - name: mypy 1.15.0
-      run: pip install mypy==1.15.0 && mypy
+      run: pip install mypy==1.15.0 && mypy ./auth_service
