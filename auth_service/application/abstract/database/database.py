@@ -11,5 +11,5 @@ class Database(ABC, Generic[SessionType]):
         raise NotImplementedError
 
     @abstractmethod
-    async def dispose(self) -> None:
+    def dispose(self) -> None:
         raise NotImplementedError
