@@ -13,3 +13,4 @@ class APIKey:
     key: str
     access_level: AccessLevelEnum
     created_at: datetime
+    last_accessed: datetime
