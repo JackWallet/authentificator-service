@@ -2,7 +2,7 @@ from abc import abstractmethod
 from typing import Protocol
 
 
-class ApiKeyRepository(Protocol):
+class ApiKeyReaderRepository(Protocol):
     @abstractmethod
     def is_allowed_to_read(self, key_id: str) -> bool:
         raise NotImplementedError
