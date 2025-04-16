@@ -8,10 +8,16 @@ class APIKeyAccessLevelEnum(StrEnum):
     WRITE = "write"
 
 
+class APIKeyStatusEnum(StrEnum):
+    ACTIVE = "active"
+    REVOKED = "revoked"
+    EXPIRED = "expired"
+
+
 @dataclass
 class APIKey:
     key: str
     access_level: APIKeyAccessLevelEnum
+    status: APIKeyStatusEnum
     created_at: datetime
-    status: str
     last_accessed: datetime
