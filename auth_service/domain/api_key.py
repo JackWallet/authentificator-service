@@ -3,7 +3,7 @@ from datetime import datetime
 from enum import StrEnum
 
 
-class AccessLevelEnum(StrEnum):
+class APIKeyAccessLevelEnum(StrEnum):
     READ = "read"
     WRITE = "write"
 
@@ -11,6 +11,7 @@ class AccessLevelEnum(StrEnum):
 @dataclass
 class APIKey:
     key: str
-    access_level: AccessLevelEnum
+    access_level: APIKeyAccessLevelEnum
     created_at: datetime
+    status: str
     last_accessed: datetime
