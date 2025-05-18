@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from enum import StrEnum
 
-from auth_service.domain.api_key_id import ApiKeyId
+from domain.api_key_id import ApiKeyId
 
 
 class APIKeyAccessLevelEnum(StrEnum):
